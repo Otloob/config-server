@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: git
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Otloob/ouloob-configs.git
+          skipSslValidation: true
+          force-pull: true
+          clone-on-start: true
+          default-label: main
+
+
+server:
+  port: 8888
