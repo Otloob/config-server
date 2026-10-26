@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Otloob/ouloob-configs.git
+          uri: https://github.com/Otloob/otlob-configs.git
           skipSslValidation: true
           force-pull: true
           clone-on-start: true
